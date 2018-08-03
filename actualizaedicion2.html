@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CLAF</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script><!--PARA Q FUNCIONE EL MODAL :( -->
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+  <script src="js/jquery-1.11.0.js"></script>
+  <script src="js/funciones.js"></script>
+  <script src="js/modal.js"></script>
+
+
+</head>
+<body>
+  <div class="container">
+    <h4>Folio 3455</br>Destino: Laboratorio Fotoquímico - CLAF</h4>
+
+    <p>Lista de títulos</p>
+    <a><input type='checkbox' onClick='toggle(this)'>Selecciona todos </a>
+  </div>
+
+<!--TABLA -->
+    <div class="container">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th></th>
+            <th>#</th>
+            <th>Título</th>
+            <th>Características</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tr>
+          <td><label><input type="checkbox" value=""></label></td>
+          <td><b>1</b></td>
+          <td><b>FESTIVAL AEREO</b></td>
+          <td>35 NNOBN SS INT SPA</td>
+          <td><a class="rojo" data-toggle="modal" data-target="#myModal">Baja</a>     <a href="ediciontitulo.html">Actualiza info procedente de BUDA</a></td>
+        </tr>
+        <tr>
+          <td><label><input type="checkbox" value=""></label></td>
+          <td><b>2</b></td>
+          <td><b>NUBES</b></td>
+          <td>35 NNOBN SS SIN INT</td>
+          <td><a class="rojo" data-toggle="modal" data-target="#myModal">Baja</a>     <a href="ediciontitulo.html">Actualiza info procedente de BUDA</a></td>
+        </tr>
+        <tr>
+          <td><label><input type="checkbox" value=""></label></td>
+          <td><b>3</b></td>
+          <td><b class="actualizado">GENERAL MAXIMINO AVILA CAMACHO INAUGURA LA ESC. SEC. VENUSTIANO CARRANZA EN PUEBLA</b></td>
+          <td>35 NNOBN SS SIN INT</td>
+          <td><a class="rojo" data-toggle="modal" data-target="#myModal">Baja</a>     <a href="ediciontitulo.html">Actualiza edición</a></td>
+        </tr>
+        <tr>
+          <td><label><input type="checkbox" value=""></label></td>
+          <td><b>4</b></td>
+          <td><b class="actualizado">COLEGIO MILITAR</b></td>
+          <td>35 NNOBN SS</td>
+          <td><a class="rojo" data-toggle="modal" data-target="#myModal">Baja</a>     <a href="ediciontitulo.html">Actualiza edición</a></td>
+        </tr>
+        <tr class="baja">
+          <td><label><input type="checkbox" value=""></label></td>
+          <td><b>5</b></td>
+          <td><b>RANCHO "LA JOYA"</b></td>
+          <td>35 NNOBN SS</td>
+          <td><a class="baja">Baja</a>     <a class="baja" >Actualiza info procedente de BUDA</a></td>
+        </tr>
+      </table>
+    </div> <!--FIN TABLA-->
+
+    <!-- botones -->
+    <div class="row">
+      <div class="col-sm-7"></div>
+      <div class="col-sm-5">
+        <button type="button" class="btn btn-danger btn-lg" >Cancelar</button>
+          <a type="submit" class="btn btn-primary btn-lg" href="continuarIngreso.html" role="button">Continuar con el ingreso</a>
+
+      </div>
+    </div> <!-- botones -->
+
+
+    <!-- MODAL -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"><b>Confirmacion de baja</b></h4>
+          </div>
+          <div class="modal-body">
+            <p><b>Título:</b> RANCHO “LA JOYA”, 35 NNOBN SS, Desconocido, MEX, 1940</br>
+              <b>Motivo baja:</b>
+            </p>
+             <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Confirmar</button>
+          </div>
+        </div>
+
+      </div>
+    </div> <!-- termian modal-->
+
+
+</body>
+</html>

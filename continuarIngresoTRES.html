@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CLAF</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script><!--PARA Q FUNCIONE EL MODAL :( -->
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+  <script src="js/jquery-1.11.0.js"></script>
+
+
+</head>
+<body>
+  <div class="container">
+    <p><b>Agrupar ingreso por Procedencia</b></p>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="1" onclick="load_nuevo()">
+            Nuevo ingreso
+          </label>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="2" onclick="load_default()">
+            Ingreso default (COPS-CLAF)
+          </label>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="radio">
+          <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios3" value="3" >
+            Ingreso existente
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>   <!-- botones radio -->
+
+
+  <div id ="content" class="container"> </div>
+
+
+
+<script>
+$('#optionsRadios1').click(function() {
+     $('#content').load("opciones.html #1"); //where Target stands for the DIV inside the html file
+  });
+
+
+  $('#optionsRadios2').click(function() {
+     $('#content').load("opciones.html #2");
+  });
+
+  $('#optionsRadios3').click(function() {
+     $('#content').load("opciones.html #3");
+  });
+</script>
+
+</body>
+</html>

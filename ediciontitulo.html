@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CLAF</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/funciones.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <p><b>Edición de Título</b></p>
+      <p>Los campos que se tienen en BUDA pueden no coincidir con los campos en CLAF, revisa a un costado de cada campo el valor en BUDA y completalo en CLAF si no se copio en automático.</p>
+    </div>
+
+    <div class="container">
+      <form class="form-horizontal">
+        <div class="form-group col-sm-4">
+          <label for="titulo">Título: <span class="rojo">Colegio Militar</span></label> </br>
+          <input type="text" class="form-control" id="titulo" placeholder="Colegio Militar">
+        </div>
+        <div class="form-group col-sm-4">
+          <label for="realizador">Realizador: <span class="rojo">Desconocido</span></label> </br>
+          <input type="text" class="form-control" id="realizador" placeholder="Desconocido">
+        </div>
+        <div class="form-group col-sm-2">
+          <label for="anio">Año: <span class="rojo">1932</span></label> </br>
+          <input type="number" min="1" max="2018" class="form-control" id="anio" placeholder="1932">
+        </div>
+        <div class="form-group col-sm-2">
+          <label for="pais">País: <span class="rojo">MEX</span></label> </br>
+          <select class="form-control">
+            <option>MEX</option>
+            <option>EEUU</option>
+            <option>CAN</option>
+            <option>COL</option>
+            <option>ECU</option>
+          </select>
+        </div>
+
+        </br></br>
+
+        <div class="form-group col-sm-3">
+          <label for="formato">Formato: <span class="rojo">35mm</span></label> </br>
+          <select class="form-control">
+            <option>35 mm</option>
+            <option>16 mm</option>
+            <option>8 mm</option>
+          </select>
+        </div>
+        <div class="form-group col-sm-3">
+          <label for="soprte">Soporte: <span class="rojo">N</span></label> </br>
+          <select class="form-control">
+            <option>N</option>
+            <option>A</option>
+            <option>otro</option>
+          </select>
+        </div>
+        <div class="form-group col-sm-3">
+          <label for="emulsion">Emulsión: <span class="rojo">NO</span></label> </br>
+          <select class="form-control">
+            <option>Negativo Original</option>
+            <option>Negativo noseque</option>
+            <option>otro</option>
+          </select>
+        </div>
+        <div class="form-group col-sm-3">
+          <label for="color">Color: <span class="rojo">BN</span></label> </br>
+          <select class="form-control">
+            <option>Blanco y negro</option>
+            <option>Color</option>
+          </select>
+        </div>
+
+        </br></br>
+
+        <div class="form-group col-sm-6">
+          <label for="nRollos">N. de rollos: <span class="rojo">9 COMP</span> </label> </br>
+          <input type="text" class="form-control" id="titulo" placeholder="">
+        </div>
+        <div class="form-group col-sm-6">
+          <label for="audio">Audio: <span class="rojo">D-ITA SUBT SPA</span></label> </br>
+          <input type="text" class="form-control" id="realizador" placeholder="">
+        </div>
+
+        </br></br>
+        <a class="btn btn-danger" href="pantalla2.html" role="button">Cancelar</a>
+        <a type="submit" class="btn btn-primary" href="actualizaedicion.html" role="button">Guardar Cambios</a>
+      </form>
+    </div>
+
+  </body>
+
+</html>

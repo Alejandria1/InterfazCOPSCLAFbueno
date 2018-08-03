@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CLAF</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script><!--PARA Q FUNCIONE EL MODAL :( -->
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+  <script src="js/jquery-1.11.0.js"></script>
+  <script src="js/funciones.js"></script>
+
+</head>
+<body>
+  <div id="1" class="container">
+    <form>
+      <div class="row">
+        <div class="form-group col-md-5">
+          <label for="Procedencia">Procedencia</label>
+          <input type="text" class="form-control" id="Procedencia" >
+        </div>
+        <div class="form-group col-md-5">
+          <label for="depositante">Depositante</label>
+          <input type="text" class="form-control" id="depositante">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-5">
+          <label for="contacto">Contacto</label>
+          <input type="text" class="form-control" id="contacto" >
+        </div>
+        <div class="form-group col-md-5">
+          <label for="telefono">Telefono</label>
+          <input type="text" class="form-control" id="telefono">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-5">
+          <label for="naturaleza">Naturaleza del ingreso</label>
+          <input type="text" class="form-control" id="naturaleza" >
+        </div>
+        <div class="form-group col-md-5">
+          <label for="correo">Correo</label>
+          <input type="email" class="form-control" id="correo">
+        </div>
+      </div>
+
+      <button class="btn btn-danger btn-lg">Regresar</button>
+      <button type="submit" class="btn btn-primary btn-lg">Continuar</button>
+    </form>
+  </div>
+
+
+  <div id="2" class="container">
+    INGRESO DEFAULT COPS-CLAF
+  </div>
+
+
+
+  <div id="3">
+    <div class="container">
+      <p><b>Busca procedencia</b></p>
+      <p></p>
+      <form class="navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Buscar donativo">
+        </div>
+      </form>
+    </div>  <!--busca-->
+
+    <div class="container"> <!--tabla-->
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Procedencia</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>DONATIVO LIC. ALFONSO ROSAS PRIEGO</td>
+            <td>Seleccionar</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>DONATIVO SR. SALVADOR BARBABOSA</td>
+            <td>Seleccionar</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>DONATIVO EMBAJADA DE FRANCIA</td>
+            <td>Seleccionar</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> <!--fin tabla-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8"></div>
+        <div class="col-md-4">
+          <button type="button" class="btn btn-danger btn-lg" >Regresar</button>
+          <button type="button" class="btn btn-primary btn-lg">Continuar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
