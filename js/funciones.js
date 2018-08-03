@@ -206,8 +206,8 @@ function load_modal5() {
   element = "row5";
 }   /* funciones para mandar distintos datos al modal, segun la fila q lo abra jsja*/
 
-/*
+
 function cambio5(element) {
   var element = document.getElementById("row5");
   element.classList.toggle("baja");
-}*/
+}
