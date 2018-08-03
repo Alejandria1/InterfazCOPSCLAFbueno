@@ -134,7 +134,7 @@ function load_existente() {
            <tr>
              <td>1</td>
              <td>DONATIVO LIC. ALFONSO ROSAS PRIEGO</td>
-             <td><a href="resumenIngreso.html">Seleccionar</a></td>
+             <td><a href="resumenIngreso1.html">Seleccionar</a></td>
            </tr>
            <tr>
              <td>2</td>
@@ -144,7 +144,7 @@ function load_existente() {
            <tr>
              <td>3</td>
              <td>DONATIVO EMBAJADA DE FRANCIA</td>
-             <td><a href="resumenIngreso.html">Seleccionar</a></td>
+             <td><a href="resumenIngreso3.html">Seleccionar</a></td>
            </tr>
          </tbody>
        </table>
